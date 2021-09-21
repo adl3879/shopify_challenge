@@ -12,3 +12,15 @@
 .like-btn--active {
 	fill: crimson;
 }
+
+.pagination {
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: rgb(9, 9, 56);
+}
+
+.active {
+
+}
