@@ -37,7 +37,7 @@ const Home = () => {
             rover={item.rover.name}
             camera={item.camera.name}
             date={item.earth_date}
-            liked={true}
+            // liked={true}
             image={item.img_src}
           />
           ) : (

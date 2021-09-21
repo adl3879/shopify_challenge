@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.like-btn {
+	transition: all .5s;
+	transform: scale(1.5);
+	fill: rgb(206, 204, 204);
+	outline: none;
+}
+
+.like-btn--active {
+	fill: crimson;
+}
