@@ -1,26 +1,16 @@
 import Image from "next/image"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 const Card = ({ rover, date, image, camera, id }) => {
   const [isLiked, setIsLiked] = useState(false)
   const [liked, setLiked] = useState([])
 
-  useEffect(() => {
-    // let list = JSON.parse(localStorage.getItem("liked"))
-    // if (!list) localStorage.setItem("liked", ["s", "ssss", 'xxxxxxx'])
-    // console.log(list)
-    // setLiked(list)
-  }, [])
-
   const toggleLike = () => {
     if (isLiked) {
       setIsLiked(false)
-      // localStorage.setItem("liked", JSON.stringify([...liked, id]))
     }
     else {
       setIsLiked(true)
-      // let newArr = liked.filter(value => value != id)
-      // localStorage.setItem("liked", JSON.stringify(newArr))
     }
   }
 
